@@ -5,64 +5,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <div class="container">
+    <div >
         <!-- HEADER  -->
-        <header>
-            <div class="logo">
-                <figure>
-                    <img src="./img/logo3.png" alt="logo">
-                </figure>
+        <header class="header">
+            <div class="container" >
+                    <figure class="logo">
+                            <img src="./img/logo3.png" alt="logo" height="45px">
+                        </figure>
+            
+                        <nav class="menu">
+                            <ul>
+                                <li><a href="#portafolio">Portfolio</a></li>
+                                <li><a href="#events">Experience</a></li>
+                                <li><a href="#contacto">Work Together</a></li>
+                            </ul>
+                        </nav>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Work Together</a></li>
-                </ul>
-            </nav>
+            
+
         </header>
         <!-- MAIN  -->
-        <section class="main">
-            <h1>Hi, I'm <strong>Luis Castro</strong> a Freelance <br> Creative <br> <strong>Front-end Developer</strong>
-            </h1>
-            <figure>
-                <img src="./img/hero.jpg" alt="luis" width="500" height="290" >
-            </figure>
+        <section class="hero">
+            <div class="container">
+                    <h1>Hi, I'm <strong>Luis Castro</strong> <br> a Freelance Creative <br> <strong>Front-end Web
+                            Developer</strong>
+                    </h1>
+                    <figure>
+                        <img class="hero-image" src="./img/hero.jpg" alt="luis" width="500" height="290"> 
+                    </figure>
+            </div>
+           
         </section>
         <!-- PORTFOLIO -->
-        <section class="portfolio">
-            <h2>Portfolio (Featured Project)</h2>
-            <article>
-                <h3>Graduation Video</h3>
-                <h6>React Native / React</h6>
-                <p><small><strong>Date:</strong> 01/11/2019</small></p>
-                <p><small><strong>You can see it:</strong>www.tech.com/native</small></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, qui saepe magnam ipsum ad
-                    repudiandae voluptatum quam perferendis ab earum dicta expedita eligendi libero illo quis error
-                    omnis cumque dolor?</p>
-                    <figure>
-                        <img src="./img/project.png" alt="project" width="500">
-                    </figure>
-            </article>
+        <section class="portfolio" id="portafolio">
+            <div class="container">
+                    <h2>Portfolio (Featured Project)</h2>
+                    <article class="project">
+                        <div class="project-details">
+                            <h3 class="project-title">Design Mobil</h3>
+                            <h6 class="project-course">React Native / React</h6>
+                            <p class="project-date"><small><strong>Date:</strong> 01/11/2019</small></p>
+                            <p class="project-url"><small><strong>You can see it : </strong> www.tech.com/native</small></p>
+                            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+                                qui saepe magnam ipsum ad
+                                repudiandae voluptatum quam perferendis ab earum dicta expedita eligendi libero illo quis error
+                                omnis cumque dolor?</p>
+                        </div>
+        
+                        <figure class="project-imageContainer">
+                            <img class="project-image" src="./img/project.png" alt="project" width="500">
+                        </figure>
+                    </article>
+                    <article class="project">
+                            <div class="project-details">
+                                <h3 class="project-title">Design Web</h3>
+                                <h6 class="project-course">Angular </h6>
+                                <p class="project-date"><small><strong>Date:</strong> 01/11/2019</small></p>
+                                <p class="project-url"><small><strong>You can see it:</strong>www.tech.com/native</small></p>
+                                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+                                    qui saepe magnam ipsum ad
+                                    repudiandae voluptatum quam perferendis ab earum dicta expedita eligendi libero illo quis error
+                                    omnis cumque dolor?</p>
+                            </div>
+            
+                            <figure class="project-imageContainer">
+                                <img class="project-image" src="./img/project.png" alt="project" width="500">
+                            </figure>
+                        </article>
+            </div>   
         </section>
-        <!-- EXPERIENCE -->
-        <section class="experience">
-            <h2>More about my experience</h2>
-            <article>
-                <figure>
-                    <img src="./img/gradluis.jpg" alt="graduacion"  width="500">
-                </figure>
-                <h3>Graduation Perú 2018</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi molestiae vero nam voluptates
-                    explicabo, iste enim debitis minima ipsum itaque eligendi dolorum, exercitationem, repellendus
-                    nesciunt iusto vel. Totam, aspernatur consequuntur?</p>
-                    <a href="#">See Talk</a>
-            </article>
+        <!-- EXPERIENCE EVENTS-->
+        <div class="container">
+                <h2 class="event-list-title" >More about my experience</h2>
+        </div>
+        <div class="container">
+                <section class="event-list" id="events">
+                        <article class="event">
+                            <figure class="event-imageContainer">
+                                <img class="event-image" src="./img/gradluis.jpg" alt="graduacion" width="500">
+                            </figure>
+                            <div class="event-detail" >
+                                <h3 class="event-title">Graduation Perú 2018</h3>
+                                <p class="event-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                                    molestiae vero nam voluptates
+                                    explicabo, iste enim debitis minima ipsum itaque eligendi dolorum, exercitationem, repellendus
+                                    nesciunt iusto vel. Totam, aspernatur consequuntur?</p>
+                                <a class="event-url" href="https://www.youtube.com/watch?v=irjbRJ2rWUc" target="_blank">See Talk</a>
+                            </div>
+                        </article>
+                        <article class="event">
+                                <figure class="event-imageContainer">
+                                    <img class="event-image" src="./img/cip.jpeg" alt="graduacion" width="500">
+                                </figure>
+                                <div class="event-detail" >
+                                    <h3 class="event-title">Cip Lima-Perú 2018</h3>
+                                    <p class="event-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                                        molestiae vero nam voluptates
+                                        explicabo, iste enim debitis minima ipsum itaque eligendi dolorum, exercitationem, repellendus
+                                        nesciunt iusto vel. Totam, aspernatur consequuntur?</p>
+                                    <a class="event-url" href="https://www.youtube.com/watch?v=irjbRJ2rWUc" target="_blank">See Talk</a>
+                                </div>
+                            </article>
+                    </section>
+        </div>
+       
+        <!-- CONTACT -->
+        <section class="contact" id="contacto">
+            <div class="container">
+                    <form action="#" class="form-email">
+                            <h3>We create something together?</h3>
+                            <input type="text" placeholder="  Your email address">
+                            <button>Send</button>
+                        </form>
+                        <div class="social">
+                      
+                            <a href="#" class="social-link facebook" ></a>
+                            <a href="#" class="social-link github " ></a>
+                            <a href="#" class="social-link instagram" ></a>
+                        </div>
+            </div>
+            
         </section>
+        <footer class="footer">
+            <div class="container">
+                    <div>
+                            <p>Developed by Luis Castro 2019</p>
+                        </div>
+                        <div><img src="./img/logito1.png" alt="logito1" width="90"></div>
+            </div>
+            
+        </footer>
     </div>
 </body>
 
